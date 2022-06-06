@@ -8,11 +8,11 @@ public class Main {
         // System.out.println("First attempt");
         Scanner scanner = new Scanner(System.in);
         System.out.print("Enter the principal amount: ");
-        double principal = scanner.nextDouble();
+        long principal = scanner.nextLong();
         System.out.print("Enter the annual interest rate: ");
-        double annualInterestRate = scanner.nextDouble();
+        float annualInterestRate = scanner.nextFloat();
         System.out.print("Enter the period (in years): ");
-        int period = scanner.nextInt();
+        short period = scanner.nextShort();
         MortgageCalculator mc = new MortgageCalculator();
         String mortgage = mc.calculateMortgage(principal, annualInterestRate, period);
         System.out.println("Mortgage: " + mortgage);
