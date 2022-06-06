@@ -14,7 +14,7 @@ public class Main {
         System.out.print("Enter the period (in years): ");
         int period = scanner.nextInt();
         MortgageCalculator mc = new MortgageCalculator();
-        double mortgage = mc.calculateMortgage(principal, annualInterestRate, period);
+        String mortgage = mc.calculateMortgage(principal, annualInterestRate, period);
         System.out.println("Mortgage: " + mortgage);
 
     }
